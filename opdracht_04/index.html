@@ -3,19 +3,24 @@
   <head>
     <title>diaBar</title>
   </head>
+
   <body>
     <h1>diaBar kassa</h1>
     <p>Wat wilt u bestellen?</p>
+    <ul>
+      <li>fris</li>
+      <li>wijn</li>
+      <li>bier</li>
+    </ul>
+    <p>Type "stop" als je klaar bent met bestellen.</p>
     <div>
-      <input type="text" id="orderInput">
       <button onclick="submitOrder()">Bestel</button>
+      <button onclick="submitReceipt()">Afrekenen</button>
+      <table id="receipt">
+        <caption>Bonnetje:</caption>
+      </table>
     </div>
-    <table id="receipt">
-    <p>Kies uit:</p>
-    <li>fris</li>
-    <li>bier</li>
-    <li>wijn</li>
-    <p>type "stop" als je klaar bent</p>
+    
     <script src="bar.js"></script>
   </body>
 </html>
