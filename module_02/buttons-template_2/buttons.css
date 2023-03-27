@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+
+}
+
+button {
+    background-color: lightgreen;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.grey-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 5px solid rgb(146, 143, 143);
+}
