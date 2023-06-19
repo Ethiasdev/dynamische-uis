@@ -15,7 +15,7 @@ function changeBackgroundAndImage() {
 }
 
 function increaseValue(button) {
-    if(button.style.backgroundColor == "red") return; // return if button is already pressed
+    if(button.style.backgroundColor == "red") return; 
     var value = parseInt(button.innerHTML);
     if (value == 1) {
         value--;
@@ -23,24 +23,24 @@ function increaseValue(button) {
         value++;
     }
     button.innerHTML = value;
-    button.style.backgroundColor = "red"; // set background color to red when button is pressed
+    button.style.backgroundColor = "red"; 
     changeBackgroundAndImage();
 }
 
 button1.addEventListener("click", function() {
     increaseValue(button1);
-    button2.style.backgroundColor = ""; // enable button 1 and 3
+    button2.style.backgroundColor = ""; 
     button3.style.backgroundColor = "";
 });
 
 button2.addEventListener("click", function() {
     increaseValue(button2);
-    button1.style.backgroundColor = ""; // enable button 2 and 3
+    button1.style.backgroundColor = ""; 
     button3.style.backgroundColor = "";
 });
 
 button3.addEventListener("click", function() {
     increaseValue(button3);
-    button1.style.backgroundColor = ""; // enable button 1 and 2
+    button1.style.backgroundColor = ""; 
     button2.style.backgroundColor = "";
 });
